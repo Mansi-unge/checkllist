@@ -1,0 +1,118 @@
+
+/* General styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.taskinput, .dateinput {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 40px;
+}
+.completed-task {
+  text-decoration: line-through;
+  background-color: transparent;
+}
+.taskinput::placeholder {
+  font-weight: 600;
+  color: rgb(33, 32, 32);
+}
+body {
+  position: relative; 
+  overflow: hidden;
+  margin-bottom: 10%;
+}
+body::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('baground.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); 
+  z-index: -1; 
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.bagimg-content {
+  position: relative; 
+  z-index: 1;
+}
+.logoimg {
+  height:300px;
+  margin-top: -40px;
+}
+.intro {
+  margin-top: -50px;
+}
+.data1{
+  flex-grow: 1; 
+  width: 50%;
+  margin-right: 10px;
+  word-break: break-word;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.data2 {
+  flex-grow: 1; 
+  width: 40%;
+  margin-right: 10px;
+  word-break: break-word;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* For larger screens, modify the font size */
+@media (min-width: 760px) {
+  .logoimg {
+    height:400px;
+    margin-top: -80px;
+  }
+  .data {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .datae {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    max-width: 150px;
+    flex: 1; 
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+ 
+ 
+  .taskinput{
+    width: 75%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .taskinput::placeholder{
+    color: rgb(33, 32, 32);
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .dateinput{
+    width: 15%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+  
+  }
+  .todo-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 80%;
+    margin: 10px auto; 
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .todo-item button {
+    margin-left: 10px;
+  }
+}
