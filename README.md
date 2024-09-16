@@ -24,4 +24,5 @@ A simple Todo Application that helps you manage your daily tasks. It allows user
 
 1. **Clone the repository**:
    ```bash
-   git clone 
+   git clone https://github.com/Mansi-unge/checkllist.git
+   
