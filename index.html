@@ -13,45 +13,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-light">
-    <!-- Main Section -->
-    <div class="main d-flex flex-column justify-content-center align-items-center text-center px-3 px-lg-5 ">
-        <!-- Responsive logo image -->
-        <img class="logoimg img-fluid" src="logo2.png" alt="Logo">
-        <!-- Responsive heading with Bootstrap font classes -->
-        <h1 class="fw-bold display-5 display-md-3 text-center  intro">
-            "Simplify Your Day, Amplify Your Success."
-        </h1>
-        <!-- Responsive paragraph text -->
-        <p class="fw-semibold fs-4 fs-md-3 text-center mx-lg-5">
-            Organize your daily tasks efficiently, reduce stress, and boost productivity.
-        </p>
-    </div>
+<body>
+        <!-- Main Section -->
+        <div class="main d-flex flex-column justify-content-center align-items-center text-center px-3 px-lg-5 ">
+            <!-- Responsive logo image -->
+            <img class="logoimg img-fluid" src="logo2.png" alt="Logo">
+            <!-- Responsive heading with Bootstrap font classes -->
+            <h1 class="fw-bold display-5 display-md-3 text-center  intro">
+                "Simplify Your Day, Amplify Your Success."
+            </h1>
+            <!-- Responsive paragraph text -->
+            <p class="fw-semibold fs-4 fs-md-3 text-center mx-lg-5">
+                Organize your daily tasks efficiently, reduce stress, and boost productivity.
+            </p>
+        </div>
 
- <!-- Add Todo Section -->
- <div class="addtodo d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 px-3 px-lg-5 mb-4">
-    <!-- Task input with responsive width -->
-    <input class="taskinput form-control bg-transparent border-0 px-3" type="text" id="todo-name"
-        placeholder="Enter your task" style="width: 100%; max-width: 400px;">
-    <!-- Due date input with responsive width -->
-    <input class="dateinput form-control bg-transparent border-0" type="date" id="due-date"
-        style="width: 100%; max-width: 200px;">
-    <!-- Add button -->
-    <button class="addbtn btn btn-primary px-4" id="add-btn">
-        <i class="fa-solid fa-plus"></i>
-    </button>
-</div>
+        <!-- Add Todo Section -->
+        <div
+            class="addtodo d-flex flex-column flex-md-row align-items-center justify-content-center gap-3 px-3 px-lg-5 mb-4">
+            <!-- Task input with responsive width -->
+            <input class="taskinput form-control bg-transparent border-0 border-bottom  border-black border-2 px-3" type="text" id="todo-name"
+                placeholder="Enter your task" style="width: 100%; max-width: 400px;">
+            <!-- Due date input with responsive width -->
+            <input class="dateinput form-control bg-transparent border-0 border-bottom  border-black border-2" placeholder="Enter date"  type="date" id="due-date"
+                style="width: 100%; max-width: 200px;">
+            <!-- Add button -->
+            <button class="addbtn btn btn-primary px-4" id="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
 
-    <!-- Todo Items Section -->
-    <div class="todo-items d-flex flex-column gap-2 p-2">
-        <!-- Todo items will render here -->
-    </div>
+        <!-- Todo Items Section -->
+        <div class="todo-items d-flex flex-column gap-2 p-2">
+            <!-- Todo items will render here -->
+        </div>
 
-    <!-- Task Done Message Section -->
-    <div class="task-done p-3 mb-5 text-center">
-        <h3 class="fw-semibold text-success" id="task-done-msg"></h3>
-    </div>
-
+        <!-- Task Done Message Section -->
+        <div class="task-done p-5 mb-5 text-center">
+            <h3 class="fw-semibold text-success" id="task-done-msg"></h3>
+        </div>
     <!-- Bootstrap JS and Custom Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
