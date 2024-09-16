@@ -75,13 +75,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="todo-item d-flex align-items-center justify-content-evenly ${completedClass}">
                         <div class="data1 fw-bold px-2">${item.name}</div>
                         <div class="data2 fw-bold  px-2">${item.duedate}</div>
-                        <button class="btn btn-warning " onclick="handleEditClick('${item.id}')">
+                        <button class="btns btn btn-warning " onclick="handleEditClick('${item.id}')">
                             <i class="fa-solid text-white fa-edit"></i>
                         </button>
-                        <button class="btn btn-success ms-1" onclick="handleCompleteClick('${item.id}')">
+                        <button class="btns btn btn-success ms-1" onclick="handleCompleteClick('${item.id}')">
                             ${item.completed ? "<i class='fa-solid fa-rotate-left'></i>" : "<i class='fa-solid fa-check'></i>"}
                         </button>
-                        <button class="btn btn-danger ms-1" onclick="handleDeleteClick('${item.id}')">
+                        <button class="btns btn btn-danger ms-1" onclick="handleDeleteClick('${item.id}')">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
