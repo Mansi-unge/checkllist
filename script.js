@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
             } else {
                 // Display the task as a regular item
                 const todoItemHTML = `
-                    <div class="todo-item d-flex align-items-center justify-content-evenly ${completedClass}">
+                    <div class="todo-item d-flex align-items-center justify-content-evenly  ${completedClass}">
                         <div class="data1 fw-bold px-2">${item.name}</div>
                         <div class="data2 fw-bold  px-2">${item.duedate}</div>
                         <button class="btns btn btn-warning " onclick="handleEditClick('${item.id}')">
@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>
+                    <hr>
                 `;
                 todoItemsContainer.innerHTML += todoItemHTML; // Add the task to the container
             }
