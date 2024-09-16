@@ -8,9 +8,13 @@ input[type="text"] {
   border-radius: 0;
   margin: 0 10px; 
 }
-input[type="date"] {
+input[type="date"]  {
   border-radius: 0;
   margin: 0 10px; 
+}
+
+hr{
+  margin: -20px 5% 0 5%;
 }
 .completed-task {
   text-decoration: line-through;
@@ -36,14 +40,12 @@ body{
   width: 50%;
   margin-right: 10px;
   word-break: break-word;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 .data2 {
   flex-grow: 1; 
   width: 50%;
   margin-right: 10px;
   word-break: break-word;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 @media (min-width: 760px) {
   .data1, .data2 {
@@ -55,7 +57,6 @@ body{
     padding: 10px;
     border: none;
     font-size: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
   }
   .datae {
     width: 100%;
@@ -64,14 +65,12 @@ body{
     font-size: 16px;
     max-width: 150px;
     flex: 1; 
-    background-color: rgba(255, 255, 255, 0.5);
   }
  
  
   .taskinput{
     width: 75%;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
   }
   .taskinput::placeholder{
     color: rgb(33, 32, 32);
@@ -81,8 +80,7 @@ body{
   .dateinput{
     width: 15%;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.5);
-  
+
   }
   .todo-item {
     display: flex;
