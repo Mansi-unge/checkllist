@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="todo-item d-flex align-items-center justify-content-evenly">
                         <input type="text" class="data form-control " value="${item.name}" id="edit-name-${item.id}">
                         <input type="date" class="datae form-control " value="${item.duedate}" id="edit-date-${item.id}">
-                        <button class="btn btn-primary" onclick="handleSaveEdit('${item.id}')">
-                            Save
+                        <button class="btn btn-primary " onclick="handleSaveEdit('${item.id}')">
+                            <i class="fa-solid fa-check-double"></i>
                         </button>
-                        <button class="btn btn-secondary" onclick="handleCancelEdit('${item.id}')">
-                            Cancel
+                        <button class="btn btn-secondary ms-1" onclick="handleCancelEdit('${item.id}')">
+                          <i class="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                 `;
@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Display the task as a regular item
                 const todoItemHTML = `
                     <div class="todo-item d-flex align-items-center justify-content-evenly ${completedClass}">
-                        <div class="data1 fw-bold fs-4 px-2">${item.name}</div>
-                        <div class="data2 fw-bold fs-4 px-2">${item.duedate}</div>
+                        <div class="data1 fw-bold px-2">${item.name}</div>
+                        <div class="data2 fw-bold  px-2">${item.duedate}</div>
                         <button class="btn btn-warning " onclick="handleEditClick('${item.id}')">
                             <i class="fa-solid text-white fa-edit"></i>
                         </button>
